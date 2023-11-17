@@ -40,7 +40,7 @@ const gameResultOutput = document.getElementById("game-result-output");
 
 const gameFieldElements = document.querySelectorAll("#game-board li");
 const winnerName = document.getElementById("winner-name");
-console.dir(winnerName)
+console.dir(winnerName);
 
 function openPlayerConfig(event) {
   editedPlayer = +event.target.dataset.playerid;
@@ -119,7 +119,7 @@ function switchPlayer() {
 
 function selectGameField(event) {
   if (gameIsOver) {
-    return
+    return;
   }
 
   const selectedField = event.target;
@@ -194,7 +194,8 @@ function endGame(winnerId) {
   gameResultOutput.style.display = "block";
   if (winnerId > 0) {
     const winnerNameElement = players[winnerId - 1].name;
-    gameResultOutput.firstElementChild.firstElementChild.textContent = winnerNameElement;
+    gameResultOutput.firstElementChild.firstElementChild.textContent =
+      winnerNameElement;
   } else {
     gameResultOutput.firstElementChild.textContent = "It's a draw!";
   }
