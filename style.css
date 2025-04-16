@@ -160,3 +160,44 @@ header {
   background-color: rgb(0, 38, 77);
   box-shadow: none;
 }
+
+@media (max-width: 768px) {
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .player-config-box {
+    width: 100%;
+    /* width: 45rem; */
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .form-control input {
+    font-size: 18px;
+    width: 80%;
+    max-width: 18rem;
+    height: 2rem;
+    margin: 5px auto;
+    padding: 0 5px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #game-result-output {
+    font-family: inherit;
+    margin: 1rem auto;
+    padding: 0.2rem;
+    width: 70%;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 38, 77);
+    display: none;
+  }
+}
