@@ -179,6 +179,14 @@ header {
     text-align: center;
   }
 
+  .modal {
+    font-family: monospace;
+  }
+
+  .player-config-box li {
+    font-family: monospace;
+  }
+
   .form-control input {
     font-size: 18px;
     width: 80%;
